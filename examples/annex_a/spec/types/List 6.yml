@@ -1,0 +1,38 @@
+description: This is the type specification for Annex A List 6.
+fields:
+  Child Unique ID:
+    type: string
+    primary_key: true
+  Gender:
+    type: categorical
+    dimension: Gender
+  Ethnicity:
+    type: categorical
+    dimension: Ethnicity
+  Date of Birth:
+    type: date
+  Age of Child (Years):
+    type: string
+  Does the Child have a Disability:
+    type: categorical
+    dimension: YesNo
+  CIN Start Date:
+    type: date
+    primary_key: true
+  Primary Need Code:
+    type: categorical
+    dimension: Child's Category of Need
+  Date Child Was Last Seen:
+    type: date
+  CIN Closure Date:
+    type: date
+  Reason for Closure:
+    type: categorical
+    dimension: Reason for Closure
+  Case status:
+    type: categorical
+    dimension: Case status
+  Allocated Team:
+    type: string
+  Allocated Worker:
+    type: string

@@ -1,0 +1,22 @@
+description: This is the type specification for Annex A List 2.
+fields:
+  Child Unique ID:
+    type: string
+    primary_key: true
+  Gender:
+    type: categorical
+    dimension: Gender
+  Ethnicity:
+    type: categorical
+    dimension: Ethnicity
+  Date of Birth:
+    type: date
+  Age of Child (Years):
+    type: string
+  Assessment start date:
+    type: date
+    primary_key: true
+  Assessment completion date:
+    type: date
+  Organisation completing assessment:
+    type: string

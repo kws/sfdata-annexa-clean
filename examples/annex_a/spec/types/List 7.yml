@@ -1,0 +1,44 @@
+description: This is the type specification for Annex A List 7.
+fields:
+  Child Unique ID:
+    type: string
+    primary_key: true
+  Gender:
+    type: categorical
+    dimension: Gender
+  Ethnicity:
+    type: categorical
+    dimension: Ethnicity
+  Date of Birth:
+    type: date
+  Age of Child (Years):
+    type: string
+  Does the Child have a Disability:
+    type: categorical
+    dimension: YesNo
+  Child Protection Plan Start Date:
+    type: date
+  Initial Category of Abuse:
+    type: categorical
+    dimension: Latest Category of Abuse
+  Latest Category of Abuse:
+    type: categorical
+    dimension: Latest Category of Abuse
+  Date of the Last Statutory Visit:
+    type: date
+  Was the Child Seen Alone?:
+    type: categorical
+    dimension: YesNo
+  Date of latest review conference:
+    type: date
+  Child Protection Plan End Date:
+    type: date
+  Subject to Emergency Protection Order or Protected Under Police Powers in Last Six Months (Y/N):
+    type: categorical
+    dimension: YesNo
+  Number of Previous Child Protection Plans:
+    type: string
+  Allocated Team:
+    type: string
+  Allocated Worker:
+    type: string

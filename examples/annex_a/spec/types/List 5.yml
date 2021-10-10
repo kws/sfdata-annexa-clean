@@ -1,0 +1,37 @@
+description: This is the type specification for Annex A List 5.
+fields:
+  Child Unique ID:
+    type: string
+    primary_key: true
+  Gender:
+    type: categorical
+    dimension: Gender
+  Ethnicity:
+    type: categorical
+    dimension: Ethnicity
+  Date of Birth:
+    type: date
+  Age of Child (Years):
+    type: string
+  Does the Child have a Disability:
+    type: categorical
+    dimension: YesNo
+  Strategy discussion initiating Section 47 Enquiry Start Date:
+    type: string
+  Was an Initial Child Protection Conference deemed unnecessary?:
+    type: categorical
+    dimension: YesNo
+  Date of Initial Child Protection Conference:
+    type: date
+    primary_key: true
+  Did the Initial Child Protection Conference Result in a Child Protection Plan:
+    type: categorical
+    dimension: YesNo
+  Number of Section 47 Enquiries in the last 12 months:
+    type: string
+  Number of ICPCs in the last 12 months:
+    type: string
+  Allocated Team:
+    type: string
+  Allocated Worker:
+    type: string

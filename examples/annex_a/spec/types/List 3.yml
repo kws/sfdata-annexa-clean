@@ -1,0 +1,30 @@
+description: This is the type specification for Annex A List 3.
+fields:
+  Child Unique ID:
+    type: string
+    primary_key: true
+  Gender:
+    type: categorical
+    dimension: Gender
+  Ethnicity:
+    type: categorical
+    dimension: Ethnicity
+  Date of Birth:
+    type: date
+  Age of Child (Years):
+    type: string
+  Date of referral:
+    type: date
+    primary_key: true
+  Referral Source:
+    type: categorical
+    dimension: Referral Source
+  Referral NFA?:
+    type: categorical
+    dimension: YesNo
+  Number of Referrals in Last 12 Months:
+    type: string
+  Allocated Team:
+    type: string
+  Allocated Worker:
+    type: string

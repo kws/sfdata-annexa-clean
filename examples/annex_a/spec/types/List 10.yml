@@ -1,0 +1,35 @@
+description: This is the type specification for Annex A List 10.
+fields:
+  Child Unique ID:
+    type: string
+    primary_key: true
+  Family identifier:
+    type: string
+  Gender:
+    type: string
+  Ethnicity:
+    type: string
+  Date of Birth:
+    type: date
+  Age of Child (Years):
+    type: string
+  Does the Child have a Disability:
+    type: string
+  Date the Child Entered Care:
+    type: date
+  Date of Decision that Child Should be Placed for Adoption:
+    type: date
+  Date of Placement Order:
+    type: date
+  Date of Matching Child and Prospective Adopters:
+    type: date
+  Date Placed for Adoption:
+    type: date
+  Date of Adoption Order:
+    type: date
+  Date of Decision that Child Should No Longer be Placed for Adoption:
+    type: date
+  Reason Why Child No Longer Placed for Adoption:
+    type: string
+  Date the child was placed for fostering in FFA or concurrent planning placement:
+    type: date

@@ -1,0 +1,29 @@
+description: This is the type specification for Annex A List 9.
+fields:
+  Child Unique ID:
+    type: string
+    primary_key: true
+  Gender:
+    type: string
+  Ethnicity:
+    type: string
+  Date of Birth:
+    type: date
+  Age of Child (Years):
+    type: string
+  Does the Child have a Disability:
+    type: string
+  Allocated Team:
+    type: string
+  Allocated Worker:
+    type: string
+  Eligibility Category:
+    type: string
+  LA In Touch:
+    type: string
+  Type of Accommodation:
+    type: string
+  Suitability of Accommodation:
+    type: string
+  Activity Status:
+    type: string

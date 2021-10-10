@@ -1,0 +1,22 @@
+description: This is the type specification for Annex A List 1.
+fields:
+  Child Unique ID:
+    type: string
+    primary_key: true
+  Gender:
+    type: categorical
+    dimension: Gender
+  Ethnicity:
+    type: categorical
+    dimension: Ethnicity
+  Date of Birth:
+    type: date
+  Age of Child (Years):
+    type: string
+  Date of Contact:
+    type: date
+    primary_key: true
+  Contact Source:
+    type: categorical
+    dimension: Referral Source
+    primary_key: true

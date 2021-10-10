@@ -1,0 +1,41 @@
+description: This is the type specification for Annex A List 11.
+fields:
+  Individual adopter identifier:
+    type: string
+    primary_key: true
+  Family identifier:
+    type: string
+  Gender:
+    type: string
+  Ethnicity:
+    type: string
+  Disability:
+    type: string
+  Is the (prospective) adopter fostering for adoption?:
+    type: string
+  Date enquiry received:
+    type: date
+  Date Stage 1 started:
+    type: date
+  Date Stage 1 ended:
+    type: date
+  Date Stage 2 started:
+    type: date
+  Date Stage 2 ended:
+    type: date
+  Date application submitted:
+    type: date
+  Date application approved:
+    type: date
+  Date adopter matched with child(ren):
+    type: date
+  Date child/children placed with adopter(s):
+    type: date
+  No. of children placed:
+    type: string
+  Date of Adoption Order:
+    type: date
+  Date of leaving adoption process:
+    type: date
+  Reason for leaving adoption process:
+    type: string

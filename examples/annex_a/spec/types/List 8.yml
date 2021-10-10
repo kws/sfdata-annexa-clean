@@ -1,0 +1,86 @@
+description: This is the type specification for Annex A List 8.
+fields:
+  Child Unique ID:
+    type: string
+    primary_key: true
+  Gender:
+    type: categorical
+    dimension: Gender
+  Ethnicity:
+    type: categorical
+    dimension: Ethnicity
+  Date of Birth:
+    type: date
+  Age of Child (Years):
+    type: string
+  Unaccompanied Asylum Seeking Child (UASC) within the Last 12 Months (Y/N):
+    type: categorical
+    dimension: YesNo
+  Does the Child have a Disability:
+    type: categorical
+    dimension: YesNo
+  Date Started to be Looked After:
+    type: date
+  Child's Category of Need:
+    type: categorical
+    dimension: Child's Category of Need
+  Is this a second or subsequent period of being a Looked After Child within the last 12 months (Y/N):
+    type: categorical
+    dimension: YesNo
+  Start date of current legal status:
+    type: date
+  Child's Legal Status:
+    type: categorical
+    dimension: Child's Legal Status
+  Date of Latest Statutory Review:
+    type: date
+  Date of Last Social Work Visit:
+    type: date
+  What is the permanence plan for this child?:
+    type: categorical
+    dimension: What is the permanence plan for this child?
+  Date of Last IRO Visit / Contact to the Child:
+    type: date
+  Date of Last Health Assessment:
+    type: date
+  Date of Last Dental Check:
+    type: date
+  Number of Placements in the Last 12 months:
+    type: string
+  Date Ceased to be Looked After:
+    type: date
+  Reason Ceased to be Looked After:
+    type: categorical
+    dimension: Reason Ceased to be Looked After
+  Start Date of Most Recent Placement:
+    type: date
+  Placement Type:
+    type: categorical
+    dimension: Placement Type
+  Placement Provider:
+    type: categorical
+    dimension: Placement Provider
+  Placement postcode:
+    type: string
+  URN of Placement:
+    type: string
+  Placement Location:
+    type: categorical
+    dimension: Placement Location
+  LA of Placement:
+    type: categorical
+    dimension: LA of Placement
+  Number of Episodes the Child has been 'Missing' from their Placement in the last 12 months:
+    type: string
+  Number of Episodes the Child has been 'Absent' from their Placement in the last 12 months:
+    type: string
+  Was the child offered a Return Interview after their last missing episode (Y/N)?:
+    type: categorical
+    dimension: YesNo
+  Did the child accept a Return Interview after their last missing episode (Y/N)?:
+    type: categorical
+    dimension: YesNo
+  Allocated Team:
+    type: string
+  Allocated Worker:
+    type: string

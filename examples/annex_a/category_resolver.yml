@@ -1,0 +1,663 @@
+Gender:
+  b) Female:
+  - F
+  - /^fem.*/i
+  - /b\).*/i
+  a) Male:
+  - M
+  - /^mal.*/i
+  - /a\).*/i
+  c) Not stated/recorded:
+  - Not stated/recorded
+  - /not.*/i
+  - /.*unknown.*/i
+  - /.*indeterminate.*/i
+  - /c\).*/i
+  d) Neither:
+  - Neither
+  - /d\).*/i
+Ethnicity:
+  a) WBRI:
+  - White British
+  - /.*whi.*british.*/i
+  - /a\).*/i
+  - /WBRI.*/i
+  b) WIRI:
+  - White Irish
+  - /.*whi.*\sir.*/i
+  - /b\).*/i
+  - /WIRI.*/i
+  c) WIRT:
+  - Traveller of Irish heritage
+  - /^tra.*\sirish.*/i
+  - /c\).*/i
+  - /WIRT.*/i
+  d) WOTH:
+  - Any other White background
+  - /.*oth.*\swhi.*/i
+  - /d\).*/i
+  - /WOTH.*/i
+  e) WROM:
+  - Gypsy/Roma
+  - /^gy.*/i
+  - /.*roma.*/i
+  - /e\).*/i
+  - /WROM.*/i
+  f) MWBC:
+  - White and Black Caribbean
+  - /^w.*\sb.*\sca.*/i
+  - /f\).*/i
+  - /MWBC.*/i
+  g) MWBA:
+  - White and Black African
+  - /^w.*\sb.*\saf.*/i
+  - /g\).*/i
+  - /MWBA.*/i
+  h) MWAS:
+  - White and Asian
+  - /^w.*\sa.*/i
+  - /h\).*/i
+  - /MWAS.*/i
+  i) MOTH:
+  - Any other Mixed background
+  - /.*oth.*\smix.*/i
+  - /i\).*/i
+  - /MOTH.*/i
+  j) AIND:
+  - Indian
+  - /^in.*/i
+  - /j\).*/i
+  - /AIND.*/i
+  k) APKN:
+  - Pakistani
+  - /^pak.*/i
+  - /k\).*/i
+  - /APKN.*/i
+  l) ABAN:
+  - Bangladeshi
+  - /^ban.*/i
+  - /l\).*/i
+  - /ABAN.*/i
+  m) AOTH:
+  - Any other Asian background
+  - /.*asian.*/i
+  - /m\).*/i
+  - /AOTH.*/i
+  n) BCRB:
+  - Caribbean
+  - /^car.*/i
+  - /n\).*/i
+  - /BCRB.*/i
+  o) BAFR:
+  - African
+  - /^af.*/i
+  - /o\).*/i
+  - /BAFR.*/i
+  p) BOTH:
+  - Any other Black background
+  - /.*oth.*\sbl.*/i
+  - /p\).*/i
+  - /BOTH.*/i
+  q) CHNE:
+  - Chinese
+  - /^ch.*/i
+  - /q\).*/i
+  - /CHNE.*/i
+  r) OOTH:
+  - Any other ethnic group
+  - /.*oth.*\seth.*/i
+  - /r\).*/i
+  - /OOTH.*/i
+  s) REFU:
+  - Refused
+  - /^ref.*/i
+  - /.*did\snot\swish.*/i
+  - /REFU.*/i
+  s) NOBT:
+  - Information not yet obtained
+  - /.*info.*/i
+  - /.*not.*\sobtained.*/i
+  - /NOBT.*/i
+Referral Source:
+  'a) 1A: Individual':
+  - "INDIVIDUAL \u2013 family member, relative or carer"
+  - /.*family.*/i
+  - /.*relative.*/i
+  - /.*carer.*/i
+  - /.*1A.*/i
+  'b) 1B: Individual':
+  - "INDIVIDUAL \u2013 acquaintance (including neighbours and child minders)"
+  - /.*acqua.*/i
+  - /.*1B.*/i
+  'c) 1C: Individual':
+  - "INDIVIDUAL \u2013 self"
+  - /.*self.*/i
+  - /.*1C.*/i
+  'd) 1D: Individual':
+  - "INDIVIDUAL \u2013 other (including strangers)"
+  - /.*individual.*\sother.*/i
+  - /.*1D.*/i
+  'i) 3C: Health services':
+  - "HEALTH SERVICES \u2013 school nurse"
+  - /.*scho.*\snurse.*/i
+  - /.*3C.*/i
+  'e) 2A: Schools':
+  - SCHOOLS
+  - /^school.*/i
+  - /.*2A.*/i
+  'f) 2B: Education services':
+  - EDUCATION SERVICES
+  - /.*educat.*/i
+  - /.*2B.*/i
+  'g) 3A: Health services':
+  - "HEALTH SERVICES \u2013 general practitioner (GP)"
+  - /.*\sgp.*/i
+  - /^gp.*/i
+  - /.*3A.*/i
+  'h) 3B: Health services':
+  - "HEALTH SERVICES \u2013 health visitor"
+  - /.*hea.*\svisi.*/i
+  - /.*3B.*/i
+  'j) 3D: Health services':
+  - "HEALTH SERVICES \u2013 other primary health services"
+  - /.*other.*\sprimary.*/i
+  - /.*3D.*/i
+  'k) 3E: Health services':
+  - "HEALTH SERVICES \u2013 A&E (accident and emergency department)"
+  - /.*a&e.*/i
+  - /.*3E.*/i
+  'l) 3F: Health services':
+  - "HEALTH SERVICES \u2013 other (for example hospice)"
+  - /.*other.*\shealth.*/i
+  - /.*health.*\sother.*/i
+  - /.*hospice.*/i
+  - /.*3F.*/i
+  'o) 5B: LA services':
+  - "LA SERVICES \u2013 other internal (department other than social care in local\
+    \ authorities, for example, youth offending (excluding housing))"
+  - /.*other.*internal.*/i
+  - /.*5B.*/i
+  'p) 5C: LA services':
+  - "LA SERVICES \u2013 external, for example, from another local authority\u2019\
+    s adults social care services"
+  - /.*external/i
+  - /.*5C.*/i
+  'n) 5A: LA services':
+  - "LA SERVICES \u2013 social care for example adults social care services"
+  - /.*social\scare.*/i
+  - /.*5A.*/i
+  'm) 4: Housing':
+  - HOUSING - local authority housing or housing association
+  - /.*housing.*/i
+  - /.*4.*/i
+  'q) 6: Police':
+  - POLICE
+  - /^poli.*/i
+  - /.*6.*/i
+  'r) 7: Other legal agency':
+  - "OTHER LEGAL AGENCY \u2013 including courts, probation, immigration, CAFCASS (Children\
+    \ and Family Court Advisory and Support Service) or prison"
+  - /.*other\slegal.*/i
+  - /.*7.*/i
+  's) 8: Other':
+  - "OTHER \u2013 including children\u2019s centres, independent agency providers\
+    \ or voluntary organisations"
+  - /^other.*/i
+  - /.*8.*/i
+  't) 9: Anonymous':
+  - ANONYMOUS
+  - /^anon.*/i
+  - /.*9.*/i
+  'u) 10: Unknown':
+  - UNKNOWN
+  - /^unk.*/i
+  - /.*10.*/i
+YesNo:
+  a) Yes:
+  - 'Yes'
+  - /Y.*/i
+  - /a\).*/i
+  b) No:
+  - 'No'
+  - /N.*/i
+  - /b\).*/i
+  c) Unknown:
+  - Unknown
+  - /unkn.*/i
+  - /c\).*/i
+Child's Category of Need:
+  N1 - Abuse or neglect:
+  - Abuse or neglect
+  - /.*abuse.*/i
+  - /.*neglect.*/i
+  - /.*N1.*/i
+  N2 - Child's disability:
+  - Child's disability
+  - /.*child.*disab.*/i
+  - /.*N2.*/i
+  N3 - Parental disability or illness:
+  - Parental disability or illness
+  - /.*parent.*disab.*/i
+  - /.*parent.*ill.*/i
+  - /.*N3.*/i
+  N4 - Family in acute stress:
+  - Family in acute stress
+  - /.*family.*stress.*/i
+  - /.*N4.*/i
+  N5 - Family dysfunction:
+  - Family dysfunction
+  - /.*family.*dys.*/i
+  - /.*N5.*/i
+  N6 - Socially unacceptable behaviour:
+  - Socially unacceptable behaviour
+  - /.*behav.*/i
+  - /.*N6.*/i
+  N7 - Low income:
+  - Low income
+  - /.*income.*/i
+  - /.*N7.*/i
+  N8 - Absent parenting:
+  - Absent parenting
+  - /.*absent.*/i
+  - /.*N8.*/i
+  N9 - Cases other than children in need:
+  - Cases other than children in need
+  - /.*other.*/i
+  - /.*N9.*/i
+  N0 - Not stated:
+  - Not stated
+  - /.*N0.*/i
+Reason for Closure:
+  RC1 - Adopted:
+  - Adopted
+  - /^adopt.*/i
+  - /.*RC1.*/i
+  RC2 - Died:
+  - Died
+  - /.*death.*/i
+  - /.*RC2.*/i
+  RC3 - Child arrangements order:
+  - Child arrangements order
+  - /.*arrangement.*\sorder.*/i
+  - /.*RC3.*/i
+  RC4 - Special guardianship order:
+  - Special guardianship order
+  - /.*guardian.*\sorder.*/i
+  - /.*RC4.*/i
+  RC5 - Transferred to services of another local authority:
+  - Transferred to services of another local authority
+  - /.*transfer.*local.*author/i
+  - /.*transfer.*la/i
+  - /.*RC5.*/i
+  RC6 - Transferred to adult social care services:
+  - Transferred to adult social care services
+  - /.*transfer.*adult.*/i
+  - /.*RC6.*/i
+  RC7 - Services ceased for any other reason, including child no longer in need:
+  - Services ceased for any other reason, including child no longer in need
+  - /.*ceased.*/i
+  - /.*no.*\sneed.*/i
+  - /.*work.*\scompleted.*/i
+  - /.*refused.*/i
+  - /.*RC7.*/i
+  RC8 - Case closed after assessment, no further action:
+  - Case closed after assessment, no further action
+  - /.*closed.*\sassess.*/i
+  - /.*no further action.*/i
+  - /.*NFA.*/i
+  - /.*RC8.*/i
+Case status:
+  a) Looked after child:
+  - Looked after child
+  - /.*looked.*/i
+  - /.*a\).*/i
+  b) Child Protection plan:
+  - Child Protection plan
+  - /.*protection.*/i
+  - /.*b\).*/i
+  c) Child in need plan:
+  - Child in need plan
+  - /.*need.*/i
+  - /.*c\).*/i
+  d) Open assessment:
+  - Open assessment
+  - /.*assess.*/i
+  - /.*d\).*/i
+  e) Closed episode:
+  - Closed episode
+  - /.*closed.*/i
+  - /.*e\).*/i
+Latest Category of Abuse:
+  a) Neglect:
+  - Neglect
+  - /.*a\).*/i
+  - /.*NEG.*/i
+  b) Physical abuse:
+  - Physical abuse
+  - /.*PHY*/i
+  - /.*b\).*/i
+  c) Sexual abuse:
+  - Sexual abuse
+  - /.*sexual*/i
+  - /.*SAB.*/i
+  - /.*c\).*/i
+  d) Emotional abuse:
+  - Emotional abuse
+  - /.*EMO*/i
+  - /.*d\).*/i
+  e) Multiple/not recommended:
+  - Multiple/not recommended
+  - /.*MUL/i
+  - /.*e\).*/i
+Child's Legal Status:
+  'E1: Placement order':
+  - Placement order
+  - /^E1.*/i
+  - /.*simultaneous.*/i
+  'C1: ICO':
+  - ICO
+  - /.*interim\scare\sorder.*/i
+  - /^C1.*/i
+  'C2: FCO':
+  - FCO
+  - /.*full\scare\sorder/i
+  - /^C2.*/i
+  'D1: Freeing order':
+  - Freeing order
+  - /^D1.*/i
+  'V2: Single period under S20':
+  - Single period under S20
+  - /.*s20.*/i
+  - /.*single.*/speriod.*/i
+  - /.*section\s20.*/i
+  - /^V2.*/i
+  'L1: Police protection LA accommodation':
+  - Police protection LA accommodation
+  - /.*police.*/i
+  - /L1.*/i
+  'L2: EPO':
+  - EPO - /.*emergency.*/i - /.*protection.*\sorder.*/i - /L2.*/i
+  'L3: Child assessment order LA accommodation':
+  - Child assessment order LA accommodation
+  - /.*child\sassessment.*/i
+  - /^L3.*/i
+  'J1: Remanded to LA or youth detention':
+  - Remanded to LA or youth detention
+  - /.*remand.*/i
+  - /.*youth\sdetention.*/i
+  - /^J1.*/i
+  'J2: LA accommodation under PACE':
+  - LA accommodation under PACE
+  - /.*pace.*/i
+  - /^J2.*/i
+  'J3: Youth rehabilitation order':
+  - Youth rehabilitation order
+  - /.*youth\srehabilit.*/i
+  - /^J3.*/i
+  'V3: Short term breaks, episodes recorded':
+  - Short term breaks, episodes recorded
+  - /.*episodes\srecorded.*/i
+  - /^V3.*/i
+  'V4: Short term breaks, agreements recorded':
+  - Short term breaks, agreements recorded
+  - /.*agreements\srecorded.*/i
+  - /^V4.*/i
+What is the permanence plan for this child?:
+  a) Return to family:
+  - Return to family
+  - /.*return.*/i
+  - /.*a\).*/i
+  b) Adoption:
+  - Adoption
+  - /.*b\).*/i
+  c) SGO/CAO:
+  - SGO/CAO
+  - /.*sgo.*/i
+  - /.*cao.*/i
+  - /.*c\).*/i
+  d) Supported living in the community:
+  - Supported living in the community
+  - /.*supported\sliving.*/i
+  - /.*d\).*/i
+  e) Long-term residential placement:
+  - Long-term residential placement
+  - /.*residential.*/i
+  - /.*e\).*/i
+  f) Long-term fostering:
+  - Long-term fostering
+  - /.*fostering.*/i
+  - /.*f\).*/i
+  g) other:
+  - other
+  - /.*other.*/i
+  - /.*g\).*/i
+Reason Ceased to be Looked After:
+  'a) E11: Adopted - application unopposed':
+  - Adopted - application unopposed
+  - /.*E11.*/i
+  - /.*adopted.*\sunopposed.*/i
+  'b) E12: Adopted - consent dispensed':
+  - Adopted - consent dispensed
+  - /.*E12.*/i
+  - /.*adopted.*\sconsent.*/i
+  'r) E15: Age assessment determined child was 18 or over':
+  - Age assessment determined child was 18 or over
+  - /.*E15.*/i
+  - /.*18.*\sover.*/i
+  - /.*over.*\s18.*/i
+  'c) E2: Died':
+  - Died
+  - /.*E2.*/i
+  - /.*died.*/i
+  'd) E3: Care taken by another LA':
+  - Care taken by another LA
+  - /.*E3.*/i
+  - /.*another.*\sla.*/i
+  'f) E4B: Returned home to live with parents or relatives - not part of planning':
+  - Returned home to live with parents or relatives - not part of planning
+  - /.*E4B.*/i
+  - /.*return.*\shome.*\snot.*\splanning.*/i
+  - /.*return.*\shome.*\sunplanned.*/i
+  'e) E4A: Returned home to live with parents or relatives - part of planning':
+  - Returned home to live with parents or relatives - part of planning
+  - /.*E4A.*/i
+  - /.*return.*\shome.*\splanning.*/i
+  - /.*return.*\shome.*\splanned.*/i
+  'g) E13: Parents, relatives or other with no parental responsibility':
+  - Parents, relatives or other with no parental responsibility
+  - /.*E13.*/i
+  'h) E41: Residence order granted':
+  - Residence order granted
+  - /.*E41.*/i
+  - /.*residence.*\sorder.*/i
+  'i) E45: Special Guardianship Orders - former carer relative/friend':
+  - Special Guardianship Orders - former carer relative/friend
+  - /.*E45.*/i
+  'j) E46: Special Guardianship Orders - former carer other':
+  - Special Guardianship Orders - former carer other
+  - /.*E46.*/i
+  - /.*E43.*/i
+  'k) E47: Special Guardianship Orders - relative/friend':
+  - Special Guardianship Orders - relative/friend
+  - /.*E47.*/i
+  'l) E48: Special Guardianship Orders - other':
+  - Special Guardianship Orders - other
+  - /.*E48.*/i
+  - /.*E44.*/i
+  'm) E5: Moved into independent living - supported':
+  - Moved into independent living - supported
+  - /.*E5.*/i
+  'n) E6: Moved into independent living - no support':
+  - Moved into independent living - no support
+  - /.*E6.*/i
+  'o) E7: Transferred to residential care funded by adult social services':
+  - Transferred to residential care funded by adult social services
+  - /.*E7.*/i
+  'p) E9: Sentenced to custody':
+  - Sentenced to custody
+  - /.*E9.*/i
+  - /.*custody.*/i
+  'q) E14: Accommodation on remand ended':
+  - Accommodation on remand ended
+  - /.*E14.*/i
+  - /.*remand.*/i
+  's) E16: Child moved abroad':
+  - Child moved abroad
+  - /.*E16.*/i
+  - /.*move.*\sabroad.*/i
+  't) E8: Care ceased for any other reason':
+  - Care ceased for any other reason
+  - /.*E8.*/i
+  - /.*other.*\sreason.*/i
+  'u) X1: CodeError':
+  - CodeError
+  - /.*X1.*/i
+Placement Type:
+  'c) U3: Foster placement - relative - not FFA':
+  - Foster placement - relative - not FFA
+  - /.*foster.*relative.*\snot.*\sFFA.*/i
+  - /.*U3.*/i
+  'f) U6: Foster placement - not FFA':
+  - Foster placement - not FFA
+  - /.*foster.*\snot.*\sFFA.*/i
+  - /.*U6.*/i
+  'a) U1: Foster placement - relatives - long term':
+  - Foster placement - relatives - long term
+  - /.*foster.*relative.*\slong\sterm.*/i
+  - /.*U1.*/i
+  'd) U4: Foster placement - long term':
+  - Foster placement - long term
+  - /.*foster.*\slong\sterm.*/i
+  - /.*U4.*/i
+  'b) U2: Foster placement - relative - FFA':
+  - Foster placement - relative - FFA
+  - /.*foster.*relative.*\sFFA.*/i
+  - /.*U2.*/i
+  'e) U5: Foster placement - FFA':
+  - Foster placement - FFA
+  - /.*foster.*\sFFA.*/i
+  - /.*U5.*/i
+  'g) A3: Placed for adoption - consent - current foster':
+  - Placed for adoption - consent - current foster
+  - /.*adoption.*\sconsent.*\scurrent/i
+  - /.*A3.*/i
+  'h) A4: Placed for adoption - consent - not foster':
+  - Placed for adoption - consent - not foster
+  - /.*adoption.*\sconsent.*\snot.*\sfoster.*/i
+  - /.*A4.*/i
+  'j) A6: Placed for adoption - order - not foster':
+  - Placed for adoption - order - not foster
+  - /.*adoption.*\sorder.*\snot.*\sfoster.*/i
+  - /.*A6.*/i
+  'i) A5: Placed for adoption - order - foster':
+  - Placed for adoption - order - foster
+  - /.*adoption.*\sorder.*\sfoster.*/i
+  - /.*A5.*/i
+  'k) P1: Placed with parents':
+  - Placed with parents
+  - /.*place.*parents/i
+  - /.*P1.*/i
+  'l) P2: Independent living':
+  - Independent living
+  - /.*P2.*/i
+  'm) P3: Residential employment':
+  - Residential employment
+  - /.*P3.*/i
+  'n) H5: Residential accommodation':
+  - Residential accommodation
+  - /.*Semi.*independent.*living.*/i
+  - /.*H5.*/i
+  'o) K1: Secure Children''s Homes':
+  - Secure Children's Homes
+  - /.*K1.*/i
+  'p) K2: Children''s Homes':
+  - Children's Homes
+  - /.*children.*homes.*/i
+  - /.*K2.*/i
+  'q) R1: Residential Care Home':
+  - Residential Care Home
+  - /.*R1.*/i
+  'r) R2: NHS/Health Trust':
+  - NHS/Health Trust
+  - /.*NHS.*/i
+  - /.*Health.*/sTrust.*/i
+  - /.*R2.*/i
+  's) R3: Family Centre or Mother and Baby Unit':
+  - Family Centre or Mother and Baby Unit
+  - /.*family.*/scentre.*/i
+  - /.*mother\sand\sbaby.*/i
+  - /.*R3.*/i
+  't) R5: Young Offender Institution':
+  - Young Offender Institution
+  - /.*offender.*/i
+  - /.*R5.*/i
+  'u) S1: Residential school':
+  - Residential school
+  - /.*S1.*/i
+  'v) Z1: Other placements':
+  - Other placements
+  - /.*other.*place.*/
+  - /.*Z1.*/i
+  'x) T1: Temporary placement - hospital':
+  - Temporary placement - hospital
+  - /.*temporary.*hospital.*/i
+  - /.*T1.*/i
+  'z) T3: Temporary placement - carer holiday':
+  - Temporary placement - carer holiday
+  - /.*temporary.*carer.*\sholiday.*/i
+  - /.*T3.*/i
+  'y) T2: Temporary placement - holiday':
+  - Temporary placement - holiday
+  - /.*temporary.*holiday.*/i
+  - /.*T2.*/i
+  'zz) T4: Temporary placement - seven days or less':
+  - Temporary placement - seven days or less
+  - /.*temporary.*seven.*/i
+  - /.*T4.*/i
+  'w) T0: Temporary placement':
+  - Temporary placement
+  - /.*temporary.*/i
+  - /.*T0.*/i
+Placement Provider:
+  'a) PR0: Parents/Parental responsibility':
+  - Parents/Parental responsibility
+  - /.*PR0.*/i
+  - /.*parent.*/i
+  'b) PR1: Own provision':
+  - Own provision
+  - /.*PR1.*/i
+  'c) PR2: Other LA provision':
+  - Other LA provision
+  - /.*PR2.*/i
+  'd) PR3: Other public provision':
+  - Other public provision
+  - /.*PR3.*/i
+  'e) PR4: Private provision':
+  - Private provision
+  - /.*PR4.*/i
+  'f) PR5: Voluntary/third sector':
+  - Voluntary/third sector
+  - /.*PR5.*/i
+Placement Location:
+  a) In:
+  - In
+  - /in.*/i
+  b) Out:
+  - Out
+  - /out.*/i
+LA of Placement:
+  NIR - Child placed in Northern Ireland:
+  - Northern Ireland
+  - /NIR.*/i
+  WAL - Child placed in Wales:
+  - Wales
+  - /WAL.*/i
+  SCO - Child placed in Scotland:
+  - Scotland
+  - /SCO.*/i
+  NUK - Child placed outside the UK:
+  - outside the UK
+  - /NUK.*/i
+  CON - Child placed in confidential placement:
+  - confidential placement
+  - /.*confidential.*/i
