@@ -35,6 +35,7 @@ PyYAML = "^5.4.1"
 openpyxl = "^3.0.9"
 xlrd = "^2.0.1"
 XlsxWriter = "^3.0.1"
+pyhumps = "^3.0.2"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.9.2"
